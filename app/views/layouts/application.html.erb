@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Myapp1</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <title>my apss</title>
+ <%= render :partial => "shared/includes" %>
 </head>
 <body>
+<div id="wrap">
+<%= render :partial => "shared/header" %>
 
 <%= yield %>
+
+</div>
+
+<%= render :partial => "shared/footer" %>
 
 </body>
 </html>
